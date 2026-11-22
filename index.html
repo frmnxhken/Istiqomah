@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Istiqomah - Platform Digital Keseharianmu</title>
+   <meta name="description" content="Platform keseharian muslim untuk membaca Al-Quran dengan Tajwid berwarna & murrotal, koleksi hadits Kutubus Sittah, kumpulan doa harian, serta jam sholat realtime berbasis koordinat GPS. 100% gratis tanpa iklan." />
+  <meta name="keywords" content="Istiqomah App, Al-Quran Digital, Tajwid Warna, Hadits Kutubus Sittah, Doa Harian, Jadwal Sholat GPS, Aplikasi Muslim Android" />
+  <meta name="author" content="Istiqomah App" />
+  <meta name="theme-color" content="#0A8754" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Istiqomah App" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Istiqomah - Platform Muslim Keseharian Terlengkap" />
+  <meta property="og:description" content="Baca Al-Quran dengan Tajwid berwarna & murrotal, hadits Kutubus Sittah, doa harian, dan jam sholat otomatis berbasis GPS. Gratis & bebas iklan!" />
+  <meta property="og:url" content="https://istiqomah-app.vercel.app" />
+  <meta property="og:image" content="https://i.ibb.co.com/LXtsHMRB/1795358804868.jpg" />
+  <meta property="og:image:secure_url" content="https://i.ibb.co.com/LXtsHMRB/1795358804868.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Istiqomah - Aplikasi Ibadah & Keseharian Muslim" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Istiqomah - Platform Keseharianmu" />
+  <meta name="twitter:description" content="Baca Al-Quran dengan Tajwid berwarna & murrotal, hadits Kutubus Sittah, doa harian, dan jam sholat otomatis berbasis GPS. Gratis & bebas iklan!" />
+  <meta name="twitter:image" content="https://i.ibb.co.com/LXtsHMRB/1795358804868.jpg" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'app-bg': '#F7FAF8',
+            'app-primary': '#0A8754',
+            'app-primary-dark': '#076941',
+            'app-mint': '#E8F5EE',
+            'app-border': '#E5EFEA',
+            'app-text': '#1C2D24',
+            'app-muted': '#5E7067'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-app-bg text-app-text font-sans antialiased selection:bg-app-mint selection:text-app-primary">
+
+  <header class="sticky top-0 z-40 bg-app-bg/90 backdrop-blur-md border-b border-app-border transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="#" class="flex items-center gap-3 group">
+          <img class="w-10 h-10 rounded-xl" src="images/logo.png" alt="Logo Istiqomah" />
+          <div>
+            <span class="text-xl font-bold tracking-tight text-app-text block leading-none">Istiqomah</span>
+            <span class="text-[11px] font-medium text-app-primary tracking-wider uppercase">App Muslim</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#fitur" class="text-sm font-semibold text-app-muted hover:text-app-primary transition-colors">Fitur Utama</a>
+          <a href="#tampilan" class="text-sm font-semibold text-app-muted hover:text-app-primary transition-colors">Tampilan Antarmuka</a>
+          <a href="#unduh" class="text-sm font-semibold text-app-muted hover:text-app-primary transition-colors">Unduh Aplikasi</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <a href="#unduh" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-app-primary hover:bg-app-primary-dark shadow-md shadow-app-primary/20 transition-all hover:shadow-lg">
+            Unduh Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="relative py-12 lg:py-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-app-mint text-app-primary text-xs font-bold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-app-primary animate-pulse"></span>
+            Aplikasi Ibadah Bebas Iklan
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-app-text leading-[1.15] tracking-tight">
+            Teman Setia Ibadah & Keseharian Muslim
+          </h1>
+          
+          <p class="text-lg sm:text-xl text-app-muted max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Platform keseharianmu untuk membaca Al-Quran dengan Tajwid berwarna & murrotal, koleksi hadits Kutubus Sittah, doa harian, dan jam sholat realtime berbasis koordinat GPS.
+          </p>
+
+          <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-3 text-xs font-semibold text-app-muted">
+            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-app-border">
+              <svg class="w-4 h-4 text-app-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              100% Gratis & Tanpa Iklan
+            </div>
+            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-app-border">
+              <svg class="w-4 h-4 text-app-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+              Tajwid Berwarna
+            </div>
+            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-app-border">
+              <svg class="w-4 h-4 text-app-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Jam Sholat berdasar Koordinat GPS
+            </div>
+            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-app-border">
+              <svg class="w-4 h-4 text-app-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              Arab & Terjemahan Indonesia
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button type="button" onclick="handleDownloadAPK()" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-app-primary hover:bg-app-primary-dark text-white font-bold text-base shadow-lg shadow-app-primary/25 transition-all flex items-center justify-center gap-3 cursor-pointer">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              Download APK V 1.0.0 (30 MB)
+            </button>
+            <a href="#tampilan" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-white hover:bg-app-mint text-app-primary border border-app-border font-bold text-base transition-all flex items-center justify-center gap-2">
+              Lihat Tampilan Aplikasi
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-[320px] sm:max-w-[350px]">
+            <div class="relative mx-auto border-[10px] border-gray-900 rounded-[48px] bg-gray-900 shadow-2xl overflow-hidden aspect-[9/19] group">
+              
+              <div class="absolute top-0 inset-x-0 h-0 bg-gray-900 z-30 flex justify-center items-center">
+                <div class="w-20 h-4 bg-black rounded-b-xl flex items-center justify-center gap-2">
+                  <div class="w-2 h-1 rounded-full bg-gray-800"></div>
+                  <div class="w-8 h-1 bg-gray-800 rounded-full"></div>
+                </div>
+              </div>
+
+              <img 
+                src="images/home.jpg" 
+                alt="Beranda Aplikasi Istiqomah"
+                class="w-full h-full object-cover transition-transform duration-500 scale-105" 
+                onerror="this.src='https://placehold.co/800x1600/E8F5EE/0A8754?text=images/home.jpg'"
+              />
+            </div>
+
+            <div class="absolute -z-10 -inset-4 bg-emerald-500/10 rounded-[60px] blur-2xl"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fitur" class="py-16 lg:py-24 bg-white border-y border-app-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-extrabold tracking-widest text-app-primary uppercase px-3 py-1 rounded-full bg-app-mint inline-block">
+          Fitur Unggulan
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-app-text tracking-tight">
+          Segala Kebutuhan Ibadah Dalam Satu Aplikasi
+        </h2>
+        <p class="text-app-muted text-base sm:text-lg">
+          Dirancang dengan antarmuka yang bersih, mudah digunakan, dan tanpa gangguan iklan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        
+        <div class="bg-app-bg rounded-3xl p-6 sm:p-8 border border-app-border hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-app-mint flex items-center justify-center text-app-primary mb-6 group-hover:bg-app-primary group-hover:text-white transition-colors duration-300">
+              <svg class="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-app-text mb-3">Al-Quran & Tajwid Warna</h3>
+            <p class="text-app-muted text-sm leading-relaxed">
+              Dilengkapi fitur <strong>Tajwid Highlight</strong> untuk membantu membedakan hukum bacaan secara visual, transliterasi Latin, terjemahan Indonesia, dan pemutar audio Murottal.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-app-border/60 text-xs font-semibold text-app-primary flex items-center gap-1">
+            114 Surah + Tajwid Highlight
+          </div>
+        </div>
+
+        <div class="bg-app-bg rounded-3xl p-6 sm:p-8 border border-app-border hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-app-mint flex items-center justify-center text-app-primary mb-6 group-hover:bg-app-primary group-hover:text-white transition-colors duration-300">
+              <svg class="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-app-text mb-3">Hadits Kutubus Sittah</h3>
+            <p class="text-app-muted text-sm leading-relaxed">
+              Koleksi 6 kitab hadits utama (Bukhari, Muslim, Abu Daud, Ibnu Majah, Nasa'i, Tirmidzi) dengan fitur pencarian cepat nomor & terjemahan.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-app-border/60 text-xs font-semibold text-app-primary flex items-center gap-1">
+            Ribuan Hadits Rujukan
+          </div>
+        </div>
+
+        <div class="bg-app-bg rounded-3xl p-6 sm:p-8 border border-app-border hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-app-mint flex items-center justify-center text-app-primary mb-6 group-hover:bg-app-primary group-hover:text-white transition-colors duration-300">
+              <svg class="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.684a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-app-text mb-3">Kumpulan Doa Harian</h3>
+            <p class="text-app-muted text-sm leading-relaxed">
+              Doa harian lengkap dengan teks Arab, transliterasi Latin, terjemahan, rujukan perawi, serta tombol cepat salin teks doa.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-app-border/60 text-xs font-semibold text-app-primary flex items-center gap-1">
+            Fitur Salin & Cari Doa
+          </div>
+        </div>
+
+        <div class="bg-app-bg rounded-3xl p-6 sm:p-8 border border-app-border hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-app-mint flex items-center justify-center text-app-primary mb-6 group-hover:bg-app-primary group-hover:text-white transition-colors duration-300">
+              <svg class="w-7 h-7 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-app-text mb-3">Jam Sholat & Notifikasi</h3>
+            <p class="text-app-muted text-sm leading-relaxed">
+              Hitung otomatis dari koordinat GPS saat ini, notifikasi lokal, audio adzan 30 detik, atau pilih file audio Anda sendiri.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-app-border/60 text-xs font-semibold text-app-primary flex items-center gap-1">
+            GPS Aktif & Alarm notifikasi
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tampilan" class="py-16 lg:py-24 bg-app-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-extrabold tracking-widest text-app-primary uppercase px-3 py-1 rounded-full bg-app-mint inline-block">
+          Tampilan Antarmuka
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-app-text tracking-tight">
+          Galeri Tangkapan Layar Aplikasi
+        </h2>
+        <p class="text-app-muted text-base sm:text-lg">
+          Desain modern, minimalis, dan mudah dipahami yang dirancang untuk kenyamanan membaca dalam waktu lama.
+        </p>
+      </div>
+
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10"></div>
+
+    </div>
+  </section>
+
+
+  <section id="unduh" class="py-16 lg:py-20 bg-app-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-app-primary rounded-[36px] p-8 md:p-16 text-white relative overflow-hidden shadow-2xl shadow-app-primary/30">
+        
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -top-20 w-80 h-80 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto text-center space-y-6">
+          <span class="px-4 py-1.5 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider inline-block">
+            Ibadah Lebih Teratur
+          </span>
+          
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            Unduh APK Aplikasi Istiqomah Sekarang
+          </h2>
+          
+          <p class="text-white/90 text-base sm:text-lg max-w-xl mx-auto font-normal leading-relaxed">
+            Nikmati akses bacaan Al-Quran dengan pewarnaan Tajwid Highlight, koleksi hadits, kumpulan doa harian, dan jam sholat GPS tanpa gangguan iklan.
+          </p>
+
+          <div class="pt-4 flex justify-center">
+            <button type="button" onclick="handleDownloadAPK()" class="w-full sm:w-auto px-9 py-4 rounded-2xl bg-white text-app-primary hover:bg-app-mint font-extrabold text-lg transition-all flex items-center justify-center gap-3 shadow-xl hover:scale-105 cursor-pointer">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              <span>Download Apk V1.0.0 (30 MB)</span>
+            </button>
+          </div>
+
+          <p class="text-xs text-white/80 pt-2 font-medium">
+            *Format file .APK untuk smartphone Android (Android 7.0+)
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-white border-t border-app-border py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-3">
+          <img class="w-8 h-8 rounded-xl" src="images/logo.png" alt="Logo Istiqomah" />
+          <span class="font-bold text-lg text-app-text tracking-tight">Istiqomah App</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-app-muted">
+          <a href="#fitur" class="hover:text-app-primary transition-colors">Fitur Utama</a>
+          <a href="#tampilan" class="hover:text-app-primary transition-colors">Galeri Antarmuka</a>
+          <a href="#unduh" class="hover:text-app-primary transition-colors">Unduh</a>
+        </div>
+
+        <div class="text-xs text-app-muted text-center md:text-right">
+          Dikembangkan pada 2026
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="install-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-gray-900/60 backdrop-blur-sm transition-opacity">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 border border-app-border shadow-2xl space-y-5 relative animate-[fadeIn_0.2s_ease-out]">
+      
+      <button type="button" onclick="closeInstallModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-app-bg hover:bg-app-mint text-app-muted hover:text-app-primary flex items-center justify-center transition-colors cursor-pointer" aria-label="Tutup">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-app-mint text-app-primary flex items-center justify-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+      </div>
+
+      <div class="space-y-2">
+        <h3 class="text-xl font-extrabold text-app-text">Unduhan Dimulai!</h3>
+        <p class="text-sm text-app-muted leading-relaxed">
+          File <strong>Istiqomah-v1.0.0.apk</strong> sedang diunduh. Karena aplikasi ini didistribusikan di luar Google Play Store, ikuti langkah berikut saat memasang:
+        </p>
+      </div>
+
+      <div class="bg-app-bg rounded-2xl p-4 border border-app-border space-y-3 text-xs text-app-text">
+        <div class="flex items-start gap-2.5">
+          <span class="w-5 h-5 rounded-full bg-app-primary text-white font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+          <p class="leading-relaxed">Buka file <strong>.apk</strong> yang telah selesai diunduh melalui notifikasi atau File Manager.</p>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="w-5 h-5 rounded-full bg-app-primary text-white font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+          <p class="leading-relaxed">Jika muncul peringatan keamanan, pilih <strong>Setelan (Settings)</strong> lalu aktifkan izin <strong>"Izinkan dari sumber ini"</strong> (Install unknown apps).</p>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="w-5 h-5 rounded-full bg-app-primary text-white font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+          <p class="leading-relaxed">Kembali dan tekan <strong>Instal</strong> untuk menyelesaikan pemasangan aplikasi.</p>
+        </div>
+      </div>
+
+      <div class="pt-1 flex flex-col sm:flex-row gap-2.5">
+        <a id="manual-download-link" href="apk/Istiqomah-v1.0.0.apk" download class="flex-1 py-3 px-4 rounded-xl bg-app-mint hover:bg-app-primary/15 text-app-primary font-bold text-xs text-center transition-colors">
+          Unduh Ulang Manual
+        </a>
+        <button type="button" onclick="closeInstallModal()" class="flex-1 py-3 px-4 rounded-xl bg-app-primary hover:bg-app-primary-dark text-white font-bold text-xs transition-colors cursor-pointer">
+          Mengerti
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const APK_DOWNLOAD_URL = "https://github.com/frmnxhken/Istiqomah/releases/download/Apk/Istiqomah_v1.0.0.apk";
+    const APK_FILE_NAME = "Istiqomah_v1.0.0.apk";
+
+    function handleDownloadAPK() {
+      const modal = document.getElementById("install-modal");
+      const manualLink = document.getElementById("manual-download-link");
+      manualLink.href = APK_DOWNLOAD_URL;
+      manualLink.setAttribute("download", APK_FILE_NAME);
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      const tempLink = document.createElement("a");
+      tempLink.href = APK_DOWNLOAD_URL;
+      tempLink.setAttribute("download", APK_FILE_NAME);
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
+    }
+
+    function closeInstallModal() {
+      const modal = document.getElementById("install-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    document.getElementById("install-modal").addEventListener("click", function (e) {
+      if (e.target === this) closeInstallModal();
+    });
+
+    const galleryItems = [
+      {
+        image: "home.jpg",
+        title: "1. Beranda Utama",
+        description: "Ringkasan waktu sholat hari ini, ayat harian, dan akses cepat ke seluruh fitur utama ibadah."
+      },
+      {
+        image: "surah.jpg",
+        title: "2. Al-Quran & Tajwid Warna",
+        description: "Tampilan surah & ayat dengan pewarnaan tajwid, transliterasi Latin, dan audio Murottal."
+      },
+      {
+        image: "schedule.jpg",
+        title: "3. Jadwal Sholat Realtime",
+        description: "Hitung otomatis koordinat GPS, jadwal 5 waktu harian, serta sakelar pengingat tiap waktu."
+      },
+      {
+        image: "doa.jpg",
+        title: "4. Kumpulan Doa Harian",
+        description: "Doa harian lengkap dengan transliterasi, terjemahan, rujukan hadits, dan tombol salin cepat."
+      },
+      {
+        image: "hadits.jpg",
+        title: "5. Hadits Kutubus Sittah",
+        description: "Koleksi 6 kitab hadits utama dengan filter perawi, pencarian nomor hadits, dan terjemahan."
+      },
+      {
+        image: "notif.jpg",
+        title: "6. Pengaturan & Adzan",
+        description: "Kustomisasi pesan notifikasi, audio adzan 30 detik bawaan, atau pilih file audio sendiri."
+      }
+    ];
+
+    const galleryGrid = document.getElementById("gallery-grid");
+
+    galleryGrid.innerHTML = galleryItems.map(item => `
+      <div class="bg-white rounded-3xl p-5 border border-app-border shadow-sm hover:shadow-md transition-all">
+        <div class="relative mx-auto border-[6px] border-gray-900 rounded-[36px] bg-gray-900 overflow-hidden aspect-[9/19] mb-5 group">
+          <img 
+            src="images/${item.image}" 
+            alt="${item.title}" 
+            class="w-full h-full object-cover transition-transform duration-500 scale-105"
+            onerror="this.src='https://placehold.co/600x1200/E8F5EE/0A8754?text=images/${encodeURIComponent(item.image)}'"
+          />
+        </div>
+        <div class="space-y-1">
+          <h3 class="text-lg font-bold text-app-text">${item.title}</h3>
+          <p class="text-app-muted text-xs leading-relaxed">${item.description}</p>
+        </div>
+      </div>
+    `).join("");
+  </script>
+
+</body>
+</html>
